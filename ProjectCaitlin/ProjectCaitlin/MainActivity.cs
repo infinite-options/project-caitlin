@@ -7,6 +7,8 @@ using Android.Content;
 using Xamarin.Essentials;
 using static Android.Bluetooth.BluetoothClass;
 using System;
+using Android.Provider;
+using System.IO;
 
 namespace ProjectCaitlin
 {
@@ -24,10 +26,17 @@ namespace ProjectCaitlin
             Button restroom = FindViewById<Button>(Resource.Id.restroom);
             Button kitchen = FindViewById<Button>(Resource.Id.kitchen);
             Button living = FindViewById<Button>(Resource.Id.LivingRoom);
-            Button callMom = FindViewById<Button>(Resource.Id.callMom);
-            Button callDad = FindViewById<Button>(Resource.Id.callDad);
-            Button callBro = FindViewById<Button>(Resource.Id.callBro);
+            ImageButton callMom = FindViewById<ImageButton>(Resource.Id.callMom);
+            ImageButton callDad = FindViewById<ImageButton>(Resource.Id.callDad);
+            ImageButton callBro = FindViewById<ImageButton>(Resource.Id.callBro);
             Button longTerm = FindViewById<Button>(Resource.Id.LongTerm);
+            Button takePic = FindViewById<Button>(Resource.Id.takePic);
+
+            takePic.Click += (s, e) =>
+            {
+                Intent i = new Intent(MediaStore.ActionImageCapture);
+                StartActivityForResult(i, 0);
+            };
 
             callMom.Click += (s, e) =>
             {
