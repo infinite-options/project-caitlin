@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CaitlinProject.MainPage">
+
+    <StackLayout BackgroundColor="#FFF4CA">
+        <!-- Place new controls here -->
+        <Label Text="Good Morning Caitlin" FontSize="50" HorizontalTextAlignment="Center" TextColor="Black"/>
+
+        <Label Text="Wear your Watch" FontSize="30" HorizontalOptions="Center" TextColor="Blue"/>
+
+        <Button x:Name="who" Text = "Who you are" BackgroundColor="White" BorderColor="Chocolate" FontAttributes="Bold" CornerRadius="100"/>
+        <Button x:Name="where" Text = "Where you are" BackgroundColor="White"  WidthRequest="120" BorderColor="Chocolate" FontAttributes="Bold" CornerRadius="100"/>
+        <Button x:Name="info" Text = "Get more information" BackgroundColor="White"  WidthRequest="120" BorderColor="Chocolate" FontAttributes="Bold" CornerRadius="100"/>
+
+        <Label Text="Call" FontSize="50" HorizontalOptions="Center" TextColor="Black"/>
+
+        <Button x:Name="mom" ImageSource="mom.png" BackgroundColor="White" BorderColor="Chocolate" FontAttributes="Bold" CornerRadius="100" WidthRequest="100"/>
+        <Button x:Name="dad" ImageSource="dad.png" BackgroundColor="White" BorderColor="Chocolate" FontAttributes="Bold" CornerRadius="100" WidthRequest="100"/>
+        
+    </StackLayout>
+
+</ContentPage>

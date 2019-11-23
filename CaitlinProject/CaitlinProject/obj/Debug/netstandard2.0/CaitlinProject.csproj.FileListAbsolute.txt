@@ -1,0 +1,13 @@
+C:\Users\Sruthi Jaganathan\source\repos\CaitlinProject\CaitlinProject\bin\Debug\netstandard2.0\CaitlinProject.deps.json
+C:\Users\Sruthi Jaganathan\source\repos\CaitlinProject\CaitlinProject\bin\Debug\netstandard2.0\CaitlinProject.dll
+C:\Users\Sruthi Jaganathan\source\repos\CaitlinProject\CaitlinProject\bin\Debug\netstandard2.0\ref\CaitlinProject.dll
+C:\Users\Sruthi Jaganathan\source\repos\CaitlinProject\CaitlinProject\bin\Debug\netstandard2.0\CaitlinProject.pdb
+C:\Users\Sruthi Jaganathan\source\repos\CaitlinProject\CaitlinProject\obj\Debug\netstandard2.0\CaitlinProject.csprojAssemblyReference.cache
+C:\Users\Sruthi Jaganathan\source\repos\CaitlinProject\CaitlinProject\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Sruthi Jaganathan\source\repos\CaitlinProject\CaitlinProject\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Sruthi Jaganathan\source\repos\CaitlinProject\CaitlinProject\obj\Debug\netstandard2.0\CaitlinProject.AssemblyInfoInputs.cache
+C:\Users\Sruthi Jaganathan\source\repos\CaitlinProject\CaitlinProject\obj\Debug\netstandard2.0\CaitlinProject.AssemblyInfo.cs
+C:\Users\Sruthi Jaganathan\source\repos\CaitlinProject\CaitlinProject\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Sruthi Jaganathan\source\repos\CaitlinProject\CaitlinProject\obj\Debug\netstandard2.0\CaitlinProject.dll
+C:\Users\Sruthi Jaganathan\source\repos\CaitlinProject\CaitlinProject\obj\Debug\netstandard2.0\ref\CaitlinProject.dll
+C:\Users\Sruthi Jaganathan\source\repos\CaitlinProject\CaitlinProject\obj\Debug\netstandard2.0\CaitlinProject.pdb
