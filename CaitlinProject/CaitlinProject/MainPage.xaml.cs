@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using System.Diagnostics;
 
 namespace CaitlinProject
 {
@@ -18,6 +19,13 @@ namespace CaitlinProject
         {
             InitializeComponent();
 
+
+        }
+
+        void Goals(object sender, System.EventArgs e)
+        {
+            Application.Current.MainPage = new goalsPage();
+            
         }
     }
 }
