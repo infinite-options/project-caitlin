@@ -21,14 +21,15 @@
         <AbsoluteLayout HorizontalOptions="Center">
             <Button x:Name="mom" ImageSource="mom.png" BackgroundColor="White" BorderColor="Black" FontAttributes="Bold" CornerRadius="80" WidthRequest="100" HorizontalOptions="Center" Margin="30, 0, 0, 0" BorderWidth="1"/>
             <Button x:Name="dad" ImageSource="dad.png" BackgroundColor="White" BorderColor="Black" FontAttributes="Bold" CornerRadius="80" WidthRequest="100" HorizontalOptions="Center" Margin="130, 0, 0, 0" BorderWidth="1"/>
-            <Button x:Name="momTwo" ImageSource="mom.png" BackgroundColor="White" BorderColor="Black" FontAttributes="Bold" CornerRadius="80" WidthRequest="100" HorizontalOptions="Center" Margin="230, 0, 0, 0" BorderWidth="1"/>
+            <Button x:Name="momTwo" ImageSource="brother.jpg" Scale="0.93" BackgroundColor="White" BorderColor="Black" FontAttributes="Bold" CornerRadius="80" WidthRequest="105" HorizontalOptions="Center" Margin="227, 0, 0, 0" BorderWidth="1"/>
         </AbsoluteLayout>
 
         <AbsoluteLayout HorizontalOptions="Center">
-            <Button x:Name="activity" Text = "Activities" BackgroundColor="Orange" BorderColor="Black" FontAttributes="Bold" CornerRadius="200" HorizontalOptions="Center" Margin="0, 0, 0, 10" Clicked="Goals" BorderWidth="1"/>
+            <Button x:Name="activity" Text = "Tasks" BackgroundColor="Orange" BorderColor="Black" FontAttributes="Bold" CornerRadius="200" HorizontalOptions="Center" Margin="0, 0, 0, 10" Clicked="Goals" BorderWidth="1"/>
             <Button x:Name="home" Text = "Home" BackgroundColor="Blue" BorderColor="Black" FontAttributes="Bold" CornerRadius="200" HorizontalOptions="Center" Margin="100, 0, 0, 10" BorderWidth="1"/>
             <Button x:Name="history" Text = "History" BackgroundColor="Green" BorderColor="Black" FontAttributes="Bold" CornerRadius="200" HorizontalOptions="Center" Margin="200, 0, 0, 10" BorderWidth="1"/>
             <Button x:Name="question" Text = "?" BackgroundColor="White" BorderColor="Black" FontAttributes="Bold" CornerRadius="200" HorizontalOptions="Center" Margin="300, 0, 0, 10" BorderWidth="1"/>
         </AbsoluteLayout>
+
     </StackLayout>
 </ContentPage>

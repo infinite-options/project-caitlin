@@ -18,8 +18,6 @@ namespace CaitlinProject
         public MainPage()
         {
             InitializeComponent();
-
-
         }
 
         void Goals(object sender, System.EventArgs e)
