@@ -1,0 +1,13 @@
+C:\Users\Sruthi Jaganathan\source\repos\AppCalendar\AppCalendar\bin\Debug\netstandard2.0\AppCalendar.deps.json
+C:\Users\Sruthi Jaganathan\source\repos\AppCalendar\AppCalendar\bin\Debug\netstandard2.0\AppCalendar.dll
+C:\Users\Sruthi Jaganathan\source\repos\AppCalendar\AppCalendar\bin\Debug\netstandard2.0\ref\AppCalendar.dll
+C:\Users\Sruthi Jaganathan\source\repos\AppCalendar\AppCalendar\bin\Debug\netstandard2.0\AppCalendar.pdb
+C:\Users\Sruthi Jaganathan\source\repos\AppCalendar\AppCalendar\obj\Debug\netstandard2.0\AppCalendar.csprojAssemblyReference.cache
+C:\Users\Sruthi Jaganathan\source\repos\AppCalendar\AppCalendar\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Sruthi Jaganathan\source\repos\AppCalendar\AppCalendar\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Sruthi Jaganathan\source\repos\AppCalendar\AppCalendar\obj\Debug\netstandard2.0\AppCalendar.AssemblyInfoInputs.cache
+C:\Users\Sruthi Jaganathan\source\repos\AppCalendar\AppCalendar\obj\Debug\netstandard2.0\AppCalendar.AssemblyInfo.cs
+C:\Users\Sruthi Jaganathan\source\repos\AppCalendar\AppCalendar\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Sruthi Jaganathan\source\repos\AppCalendar\AppCalendar\obj\Debug\netstandard2.0\AppCalendar.dll
+C:\Users\Sruthi Jaganathan\source\repos\AppCalendar\AppCalendar\obj\Debug\netstandard2.0\ref\AppCalendar.dll
+C:\Users\Sruthi Jaganathan\source\repos\AppCalendar\AppCalendar\obj\Debug\netstandard2.0\AppCalendar.pdb
