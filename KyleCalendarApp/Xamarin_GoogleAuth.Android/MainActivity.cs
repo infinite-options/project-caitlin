@@ -24,11 +24,14 @@ namespace Xamarin_GoogleAuth.Droid
 
             var googleLoginButton = FindViewById<Button>(Resource.Id.googleLoginButton);
             var getCalendarsButton = FindViewById<Button>(Resource.Id.getCalendarsButton);
-            var insertEventButton = FindViewById<Button>(Resource.Id.insertEventButton);
+            var getEventsListButton = FindViewById<Button>(Resource.Id.getEventsListButton);
             googleLoginButton.Click += OnGoogleLoginButtonClicked;
             getCalendarsButton.Click += OnGetCalendarsButtonClicked;
-            insertEventButton.Click += OnInsertEventButtonClicked;
+            getEventsListButton.Click += GetEventsListButtonClicked;
         }
+
+
+        //------------------------------- AUTHENTICATE
 
         private void OnGoogleLoginButtonClicked(object sender, EventArgs e)
         {
@@ -68,14 +71,12 @@ namespace Xamarin_GoogleAuth.Droid
                            .Show();
         }
 
+
+        //---------------------------- GET CALENDARS
+
         public void OnGetCalendarsButtonClicked(object sender, EventArgs e)
         {
             OnGetCalendarsCompleted();
-        }
-
-        public void OnInsertEventButtonClicked(object sender, EventArgs e)
-        {
-           
         }
 
         public async void OnGetCalendarsCompleted()
@@ -83,6 +84,28 @@ namespace Xamarin_GoogleAuth.Droid
             // Retrieve the user's active calendars
             var googleService = new GoogleService();
             var calendars = await googleService.GetCalendars();
+            if (calendars == null)
+            {
+                new AlertDialog.Builder(this)
+                               .SetTitle("Oops!")
+                               .SetMessage("Please login before accessing your calendars")
+                               .Show();
+            }
+            System.Diagnostics.Debug.WriteLine(calendars);
+        }
+
+        //------------------------------- GET EVENTS
+
+        public void GetEventsListButtonClicked(object sender, EventArgs e)
+        {
+            OnGetEventsListCompleted();
+        }
+
+        public async void OnGetEventsListCompleted()
+        {
+            // Retrieve the user's active calendars
+            var googleService = new GoogleService();
+            var calendars = await googleService.GetEventsList();
             if (calendars == null)
             {
                 new AlertDialog.Builder(this)

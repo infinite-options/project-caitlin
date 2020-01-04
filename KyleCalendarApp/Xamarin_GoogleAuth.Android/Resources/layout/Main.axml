@@ -22,14 +22,11 @@
 		android:layout_marginTop="0.0dp"
 		android:layout_marginLeft="0.0dp"
 		android:layout_marginRight="0.0dp" />
-	<EditText
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"/>
 	<Button
-		android:id="@+id/insertEventButton"
+		android:id="@+id/getEventsListButton"
 		android:layout_width="match_parent"
 		android:layout_height="53.7dp"
-		android:text="Add Event"
+		android:text="List Events"
 		android:layout_marginBottom="0.0dp"
 		android:layout_marginTop="0.0dp"
 		android:layout_marginLeft="0.0dp"
