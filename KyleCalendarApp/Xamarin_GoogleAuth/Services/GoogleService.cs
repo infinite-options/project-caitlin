@@ -60,7 +60,7 @@ namespace Xamarin_GoogleAuth.Services
 
             //Make HTTP Request
             var request = new HttpRequestMessage();
-            request.RequestUri = new Uri("https://www.googleapis.com/calendar/v3/calendars/primary/events?timeMax=2020-01-01T04%3A36%3A05.000Z&timeMin=2019-12-26T15%3A37%3A21.716Z");
+            request.RequestUri = new Uri("https://www.googleapis.com/calendar/v3/calendars/primary/events?timeMax=2020-01-06T04%3A36%3A05.000Z&timeMin=2020-01-02T15%3A37%3A21.716Z");
             request.Method = HttpMethod.Get;
 
             //Format Headers of Request with included Token
@@ -77,6 +77,11 @@ namespace Xamarin_GoogleAuth.Services
 
             //Create itemList
             var itemList = new List<string>();
+            var itemList1 = new List<string>();
+            var itemList2 = new List<string>();
+
+            //Create DataTable
+            //DataTable table = new DataTable();
 
             //Try to add "Summary" Items to list from JSON. If null, redirect to Login prompt.
             try
@@ -84,17 +89,35 @@ namespace Xamarin_GoogleAuth.Services
                 foreach (var events in result.Items)
                 {
                     itemList.Add(events.EventName);
+                    itemList.Add(events.Start.DateTime.ToString());
+                    itemList.Add(events.End.DateTime.ToString());
                 }
+
+                //foreach (var startTime in result.Items)
+                //{
+                //    itemList1.Add(startTime.Start.DateTime.ToString());
+                //}
+
+                //foreach (var endTime in result.Items)
+                //{
+                //    itemList1.Add(endTime.End.DateTime.ToString());
+                //}
             }
             catch (NullReferenceException e)
             {
-                return null;
+                return (null);
             }
 
             //Compile these values in to a string list and return to be displayed
-            string itemListString = String.Join(", ", itemList);
+            string eventNameString = String.Join(", ", itemList);
+            string startTimeString = String.Join(", ", itemList1);
+            string endTimeString = String.Join(", ", itemList2);
 
-            return itemListString;
+            //System.Diagnostics.Debug.WriteLine(itemListString);
+            //System.Diagnostics.Debug.WriteLine(itemListString1);
+
+            //return (eventNameString, startTimeString, endTimeString);
+            return (eventNameString);
         }
     }
 }

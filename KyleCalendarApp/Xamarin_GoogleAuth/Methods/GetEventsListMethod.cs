@@ -28,7 +28,7 @@
         public string AccessRole { get; set; }
 
         [JsonProperty("defaultReminders")]
-        public DefaultReminder[] DefaultReminders { get; set; }
+        public EventsDefaultReminder[] DefaultReminders { get; set; }
 
         [JsonProperty("nextPageToken")]
         public string NextPageToken { get; set; }
@@ -37,10 +37,10 @@
         public string NextSyncToken { get; set; }
 
         [JsonProperty("items")]
-        public EventItems[] Items { get; set; }
+        public EventsItems[] Items { get; set; }
     }
 
-    public partial class DefaultReminder
+    public partial class EventsDefaultReminder
     {
         [JsonProperty("method")]
         public string method { get; set; }
@@ -49,7 +49,7 @@
         public int minutes { get; set; }
     }
 
-    public partial class EventItems
+    public partial class EventsItems
     {
         [JsonProperty("kind")]
         public string Kind { get; set; }
@@ -85,16 +85,16 @@
         public string ColorID { get; set; }
 
         [JsonProperty("creator", NullValueHandling = NullValueHandling.Ignore)]
-        public Creator Creator { get; set; }
+        public EventsCreator Creator { get; set; }
 
         [JsonProperty("organizer", NullValueHandling = NullValueHandling.Ignore)]
-        public Creator Organizer { get; set; }
+        public EventsCreator Organizer { get; set; }
 
         [JsonProperty("start", NullValueHandling = NullValueHandling.Ignore)]
-        public End Start { get; set; }
+        public EventsEnd Start { get; set; }
 
         [JsonProperty("end", NullValueHandling = NullValueHandling.Ignore)]
-        public End End { get; set; }
+        public EventsEnd End { get; set; }
 
         [JsonProperty("iCalUID", NullValueHandling = NullValueHandling.Ignore)]
         public string ICalUid { get; set; }
@@ -103,19 +103,19 @@
         public long? Sequence { get; set; }
 
         [JsonProperty("attendees", NullValueHandling = NullValueHandling.Ignore)]
-        public Attendee[] Attendees { get; set; }
+        public EventsAttendee[] Attendees { get; set; }
 
         [JsonProperty("hangoutLink", NullValueHandling = NullValueHandling.Ignore)]
         public Uri HangoutLink { get; set; }
 
         [JsonProperty("conferenceData", NullValueHandling = NullValueHandling.Ignore)]
-        public ConferenceData ConferenceData { get; set; }
+        public EventsConferenceData ConferenceData { get; set; }
 
         [JsonProperty("guestsCanModify", NullValueHandling = NullValueHandling.Ignore)]
         public bool? GuestsCanModify { get; set; }
 
         [JsonProperty("reminders", NullValueHandling = NullValueHandling.Ignore)]
-        public Reminders Reminders { get; set; }
+        public EventsReminders Reminders { get; set; }
 
         [JsonProperty("recurrence", NullValueHandling = NullValueHandling.Ignore)]
         public string[] Recurrence { get; set; }
@@ -124,13 +124,11 @@
         public string RecurringEventId { get; set; }
 
         [JsonProperty("originalStartTime", NullValueHandling = NullValueHandling.Ignore)]
-        public OriginalStartTime OriginalStartTime { get; set; }
+        public EventsOriginalStartTime OriginalStartTime { get; set; }
 
-        [JsonProperty("description", NullValueHandling = NullValueHandling.Ignore)]
-        public string Description { get; set; }
     }
 
-    public partial class Attendee
+    public partial class EventsAttendee
     {
         [JsonProperty("email")]
         public string Email { get; set; }
@@ -157,13 +155,13 @@
         public string Comment { get; set; }
     }
 
-    public partial class ConferenceData
+    public partial class EventsConferenceData
     {
         [JsonProperty("entryPoints")]
-        public EntryPoint[] EntryPoints { get; set; }
+        public EventsEntryPoint[] EntryPoints { get; set; }
 
         [JsonProperty("conferenceSolution")]
-        public ConferenceSolution ConferenceSolution { get; set; }
+        public EventsConferenceSolution ConferenceSolution { get; set; }
 
         [JsonProperty("conferenceId", NullValueHandling = NullValueHandling.Ignore)]
         public string ConferenceId { get; set; }
@@ -172,13 +170,13 @@
         public string Signature { get; set; }
 
         [JsonProperty("createRequest", NullValueHandling = NullValueHandling.Ignore)]
-        public CreateRequest CreateRequest { get; set; }
+        public EventsCreateRequest CreateRequest { get; set; }
     }
 
-    public partial class ConferenceSolution
+    public partial class EventsConferenceSolution
     {
         [JsonProperty("key")]
-        public Key Key { get; set; }
+        public EventsKey Key { get; set; }
 
         [JsonProperty("name")]
         public string Name { get; set; }
@@ -187,31 +185,31 @@
         public string IconUri { get; set; }
     }
 
-    public partial class Key
+    public partial class EventsKey
     {
         [JsonProperty("type")]
         public string Type { get; set; }
     }
 
-    public partial class CreateRequest
+    public partial class EventsCreateRequest
     {
         [JsonProperty("requestId")]
         public string RequestId { get; set; }
 
         [JsonProperty("conferenceSolutionKey")]
-        public Key ConferenceSolutionKey { get; set; }
+        public EventsKey ConferenceSolutionKey { get; set; }
 
         [JsonProperty("status")]
-        public StatusClass Status { get; set; }
+        public EventsStatusClass Status { get; set; }
     }
 
-    public partial class StatusClass
+    public partial class EventsStatusClass
     {
         [JsonProperty("statusCode")]
         public string StatusCode { get; set; }
     }
 
-    public partial class EntryPoint
+    public partial class EventsEntryPoint
     {
         [JsonProperty("entryPointType")]
         public string EntryPointType { get; set; }
@@ -229,7 +227,7 @@
         public string RegionCode { get; set; }
     }
 
-    public partial class Creator
+    public partial class EventsCreator
     {
         [JsonProperty("email")]
         public string Email { get; set; }
@@ -241,7 +239,7 @@
         public bool? Self { get; set; }
     }
 
-    public partial class End
+    public partial class EventsEnd
     {
         [JsonProperty("dateTime")]
         public DateTimeOffset DateTime { get; set; }
@@ -250,13 +248,13 @@
         public string TimeZone { get; set; }
     }
 
-    public partial class OriginalStartTime
+    public partial class EventsOriginalStartTime
     {
         [JsonProperty("dateTime")]
         public DateTimeOffset DateTime { get; set; }
     }
 
-    public partial class Reminders
+    public partial class EventsReminders
     {
         [JsonProperty("useDefault")]
         public bool UseDefault { get; set; }

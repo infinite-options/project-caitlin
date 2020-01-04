@@ -106,7 +106,7 @@ namespace Xamarin_GoogleAuth.Droid
             // Retrieve the user's active calendars
             var googleService = new GoogleService();
             var events = await googleService.GetEventsList();
-            if (events == null)
+            if (events == (null))
             {
                 new AlertDialog.Builder(this)
                                .SetTitle("Oops!")

@@ -58,13 +58,13 @@
         public string AccessRole { get; set; }
 
         [JsonProperty("defaultReminders")]
-        public DefaultReminder[] DefaultReminders { get; set; }
+        public EventsDefaultReminder[] DefaultReminders { get; set; }
 
         [JsonProperty("conferenceProperties")]
-        public ConferenceProperties ConferenceProperties { get; set; }
+        public CalendarsConferenceProperties ConferenceProperties { get; set; }
 
         [JsonProperty("notificationSettings", NullValueHandling = NullValueHandling.Ignore)]
-        public NotificationSettings NotificationSettings { get; set; }
+        public CalendarsNotificationSettings NotificationSettings { get; set; }
 
         [JsonProperty("primary", NullValueHandling = NullValueHandling.Ignore)]
         public bool? Primary { get; set; }
@@ -73,13 +73,13 @@
         public string SummaryOverride { get; set; }
     }
 
-    public partial class ConferenceProperties
+    public partial class CalendarsConferenceProperties
     {
         [JsonProperty("allowedConferenceSolutionTypes")]
         public string[] AllowedConferenceSolutionTypes { get; set; }
     }
 
-    public partial class DefaultReminder
+    public partial class CalendarsDefaultReminder
     {
         [JsonProperty("method")]
         public string Method { get; set; }
@@ -88,13 +88,13 @@
         public long Minutes { get; set; }
     }
 
-    public partial class NotificationSettings
+    public partial class CalendarsNotificationSettings
     {
         [JsonProperty("notifications")]
-        public Notification[] Notifications { get; set; }
+        public CalendarsNotification[] Notifications { get; set; }
     }
 
-    public partial class Notification
+    public partial class CalendarsNotification
     {
         [JsonProperty("type")]
         public string Type { get; set; }
