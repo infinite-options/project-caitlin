@@ -60,7 +60,7 @@ namespace Xamarin_GoogleAuth.Services
 
             //Make HTTP Request
             var request = new HttpRequestMessage();
-            request.RequestUri = new Uri("https://www.googleapis.com/calendar/v3/users/me/calendarList");
+            request.RequestUri = new Uri("https://www.googleapis.com/calendar/v3/calendars/primary/events?timeMax=2020-01-01T04%3A36%3A05.000Z&timeMin=2019-12-26T15%3A37%3A21.716Z");
             request.Method = HttpMethod.Get;
 
             //Format Headers of Request with included Token
@@ -73,7 +73,7 @@ namespace Xamarin_GoogleAuth.Services
             var json = await content.ReadAsStringAsync();
 
             //Deserialize JSON Result
-            var result = JsonConvert.DeserializeObject<Methods.GetCalendarsMethod>(json);
+            var result = JsonConvert.DeserializeObject<Methods.GetEventsListMethod>(json);
 
             //Create itemList
             var itemList = new List<string>();
@@ -81,9 +81,9 @@ namespace Xamarin_GoogleAuth.Services
             //Try to add "Summary" Items to list from JSON. If null, redirect to Login prompt.
             try
             {
-                foreach (var sum in result.Items)
+                foreach (var events in result.Items)
                 {
-                    itemList.Add(sum.Summary);
+                    itemList.Add(events.EventName);
                 }
             }
             catch (NullReferenceException e)
