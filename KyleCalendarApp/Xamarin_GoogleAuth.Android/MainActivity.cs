@@ -105,15 +105,15 @@ namespace Xamarin_GoogleAuth.Droid
         {
             // Retrieve the user's active calendars
             var googleService = new GoogleService();
-            var calendars = await googleService.GetEventsList();
-            if (calendars == null)
+            var events = await googleService.GetEventsList();
+            if (events == null)
             {
                 new AlertDialog.Builder(this)
                                .SetTitle("Oops!")
-                               .SetMessage("Please login before accessing your calendars")
+                               .SetMessage("Please login before listing you events")
                                .Show();
             }
-            System.Diagnostics.Debug.WriteLine(calendars);
+            System.Diagnostics.Debug.WriteLine(events);
         }
     }
 }
