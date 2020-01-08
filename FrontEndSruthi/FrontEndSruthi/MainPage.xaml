@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FrontEndSruthi.MainPage">
+
+    <StackLayout>
+
+        <Label Text="Get Ready" FontSize="40" HorizontalTextAlignment="Center" TextColor="Black" Margin="0, 50, 0, 0"/>
+
+        <AbsoluteLayout HorizontalOptions="Center">
+        <!-- Place new controls here -->
+        <Button x:Name="activityPopUp" HorizontalOptions="Start" WidthRequest="100" HeightRequest="70" Margin="10, 30, 0, 0"></Button>
+        <Button x:Name="activityPopUp1" FontAttributes="Bold" WidthRequest="100" HeightRequest="70" HorizontalOptions="Start" Margin="130, 30, 0, 0"/>
+        <Button x:Name="activityPopUp2" FontAttributes="Bold" WidthRequest="100" HeightRequest="70" HorizontalOptions="Start" Margin="250, 30, 0, 0"/>
+        </AbsoluteLayout>
+
+    </StackLayout>
+
+</ContentPage>

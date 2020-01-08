@@ -1,0 +1,13 @@
+C:\Users\Sruthi Jaganathan\source\repos\FrontEndSruthi\FrontEndSruthi\bin\Debug\netstandard2.0\FrontEndSruthi.deps.json
+C:\Users\Sruthi Jaganathan\source\repos\FrontEndSruthi\FrontEndSruthi\bin\Debug\netstandard2.0\FrontEndSruthi.dll
+C:\Users\Sruthi Jaganathan\source\repos\FrontEndSruthi\FrontEndSruthi\obj\Debug\netstandard2.0\FrontEndSruthi.csprojAssemblyReference.cache
+C:\Users\Sruthi Jaganathan\source\repos\FrontEndSruthi\FrontEndSruthi\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Sruthi Jaganathan\source\repos\FrontEndSruthi\FrontEndSruthi\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Sruthi Jaganathan\source\repos\FrontEndSruthi\FrontEndSruthi\obj\Debug\netstandard2.0\FrontEndSruthi.AssemblyInfoInputs.cache
+C:\Users\Sruthi Jaganathan\source\repos\FrontEndSruthi\FrontEndSruthi\obj\Debug\netstandard2.0\FrontEndSruthi.AssemblyInfo.cs
+C:\Users\Sruthi Jaganathan\source\repos\FrontEndSruthi\FrontEndSruthi\bin\Debug\netstandard2.0\ref\FrontEndSruthi.dll
+C:\Users\Sruthi Jaganathan\source\repos\FrontEndSruthi\FrontEndSruthi\bin\Debug\netstandard2.0\FrontEndSruthi.pdb
+C:\Users\Sruthi Jaganathan\source\repos\FrontEndSruthi\FrontEndSruthi\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Sruthi Jaganathan\source\repos\FrontEndSruthi\FrontEndSruthi\obj\Debug\netstandard2.0\FrontEndSruthi.dll
+C:\Users\Sruthi Jaganathan\source\repos\FrontEndSruthi\FrontEndSruthi\obj\Debug\netstandard2.0\ref\FrontEndSruthi.dll
+C:\Users\Sruthi Jaganathan\source\repos\FrontEndSruthi\FrontEndSruthi\obj\Debug\netstandard2.0\FrontEndSruthi.pdb
