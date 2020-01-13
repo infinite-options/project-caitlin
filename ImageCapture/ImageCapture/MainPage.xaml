@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ImageCapture.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Button Text="Retrieve Pic" Clicked="Button_Clicked"/>
+        <Button Text="Take Pic" Clicked="Take_Pic"/>
+        <Image x:Name="MyImage" HeightRequest="300" WidthRequest="300"/>
+        <Label x:Name="picInfo"/>
+    </StackLayout>
+
+</ContentPage>

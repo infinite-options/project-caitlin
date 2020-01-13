@@ -1,0 +1,15 @@
+C:\Users\Sruthi Jaganathan\source\repos\ImageCapture\ImageCapture\bin\Debug\netstandard2.0\ImageCapture.deps.json
+C:\Users\Sruthi Jaganathan\source\repos\ImageCapture\ImageCapture\bin\Debug\netstandard2.0\ImageCapture.dll
+C:\Users\Sruthi Jaganathan\source\repos\ImageCapture\ImageCapture\obj\Debug\netstandard2.0\ImageCapture.csprojAssemblyReference.cache
+C:\Users\Sruthi Jaganathan\source\repos\ImageCapture\ImageCapture\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Sruthi Jaganathan\source\repos\ImageCapture\ImageCapture\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Sruthi Jaganathan\source\repos\ImageCapture\ImageCapture\obj\Debug\netstandard2.0\ImageCapture.AssemblyInfoInputs.cache
+C:\Users\Sruthi Jaganathan\source\repos\ImageCapture\ImageCapture\obj\Debug\netstandard2.0\ImageCapture.AssemblyInfo.cs
+C:\Users\Sruthi Jaganathan\source\repos\ImageCapture\ImageCapture\bin\Debug\netstandard2.0\ref\ImageCapture.dll
+C:\Users\Sruthi Jaganathan\source\repos\ImageCapture\ImageCapture\bin\Debug\netstandard2.0\ImageCapture.pdb
+C:\Users\Sruthi Jaganathan\source\repos\ImageCapture\ImageCapture\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Sruthi Jaganathan\source\repos\ImageCapture\ImageCapture\obj\Debug\netstandard2.0\ImageCapture.dll
+C:\Users\Sruthi Jaganathan\source\repos\ImageCapture\ImageCapture\obj\Debug\netstandard2.0\ref\ImageCapture.dll
+C:\Users\Sruthi Jaganathan\source\repos\ImageCapture\ImageCapture\obj\Debug\netstandard2.0\ImageCapture.pdb
+C:\Users\Sruthi Jaganathan\source\repos\ImageCapture\ImageCapture\bin\Debug\netstandard2.0\Xamarin.Android.Support.Media.Compat.dll
+C:\Users\Sruthi Jaganathan\source\repos\ImageCapture\ImageCapture\obj\Debug\netstandard2.0\ImageCapture.csproj.CopyComplete
