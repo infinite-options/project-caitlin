@@ -77,8 +77,8 @@ namespace Xamarin_GoogleAuth.Services
 
             //Create itemList
             var itemList = new List<string>();
-            var itemList1 = new List<string>();
-            var itemList2 = new List<string>();
+            //var itemList1 = new List<string>();
+            //var itemList2 = new List<string>();
 
             //Create DataTable
             //DataTable table = new DataTable();
@@ -110,8 +110,8 @@ namespace Xamarin_GoogleAuth.Services
 
             //Compile these values in to a string list and return to be displayed
             string eventNameString = String.Join(", ", itemList);
-            string startTimeString = String.Join(", ", itemList1);
-            string endTimeString = String.Join(", ", itemList2);
+            //string startTimeString = String.Join(", ", itemList1);
+            //string endTimeString = String.Join(", ", itemList2);
 
             //System.Diagnostics.Debug.WriteLine(itemListString);
             //System.Diagnostics.Debug.WriteLine(itemListString1);

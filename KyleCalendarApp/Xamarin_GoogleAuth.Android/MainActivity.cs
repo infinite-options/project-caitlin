@@ -25,10 +25,13 @@ namespace Xamarin_GoogleAuth.Droid
             var googleLoginButton = FindViewById<Button>(Resource.Id.googleLoginButton);
             var getCalendarsButton = FindViewById<Button>(Resource.Id.getCalendarsButton);
             var getEventsListButton = FindViewById<Button>(Resource.Id.getEventsListButton);
+            var getFirebaseActivitiesButton = FindViewById<Button>(Resource.Id.getFirebaseActivitiesButton);
             googleLoginButton.Click += OnGoogleLoginButtonClicked;
             getCalendarsButton.Click += OnGetCalendarsButtonClicked;
             getEventsListButton.Click += GetEventsListButtonClicked;
-        }
+            getFirebaseActivitiesButton.Click += GetFirebaseActivitiesButtonClicked;
+       }
+
 
 
         //------------------------------- AUTHENTICATE
@@ -94,9 +97,33 @@ namespace Xamarin_GoogleAuth.Droid
             System.Diagnostics.Debug.WriteLine(calendars);
         }
 
-        //------------------------------- GET EVENTS
+        //------------------------------- GET FIREBASE INFO
 
-        public void GetEventsListButtonClicked(object sender, EventArgs e)
+        public void GetFirebaseActivitiesButtonClicked(object sender, EventArgs e)
+        {
+            OnGetFirebaseActivitiesCompleted();
+        }
+
+        public async void OnGetFirebaseActivitiesCompleted()
+        {
+            // Retrieve the user's active calendars
+            var firebaseService = new FirebaseService();
+            var activities = await firebaseService.GetActivities();
+            if (activities == (null))
+            {
+                new AlertDialog.Builder(this)
+                               .SetTitle("Oops!")
+                               .SetMessage("Please login before listing you events")
+                               .Show();
+            }
+            System.Diagnostics.Debug.WriteLine(activities);
+        }
+
+
+
+            //------------------------------- GET EVENTS
+
+            public void GetEventsListButtonClicked(object sender, EventArgs e)
         {
             OnGetEventsListCompleted();
         }
@@ -114,6 +141,29 @@ namespace Xamarin_GoogleAuth.Droid
                                .Show();
             }
             System.Diagnostics.Debug.WriteLine(events);
+
+
+            //var eventButton = FindViewById<Button>(Resource.Id.Event1);
+            //var title = "";
+            //var startTime = "";
+            //var endTime = "";
+            //for (int i = 0; i < events.Length - 2; i++)
+            //{
+            //    if (events.Substring(i, 1) == "," && title == "")
+            //    {
+            //        title = events.Substring(0, i);
+            //    }
+            //    else if (startTime == "" && events.Substring(i, 2) == "PM")
+            //    {
+            //        startTime = events.Substring(i - 8, 8);
+            //    }
+            //    else if (endTime == "" && events.Substring(i, 2) == "PM")
+            //    {
+            //        endTime = events.Substring(i - 8, 8);
+            //    }
+            //}
+
+            //eventButton.Text = $"" + title + "\n" + startTime + "\n" + endTime;
         }
     }
 }

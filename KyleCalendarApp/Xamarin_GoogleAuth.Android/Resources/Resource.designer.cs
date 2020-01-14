@@ -95,10 +95,13 @@ namespace Xamarin_GoogleAuth.Droid
 			public const int getEventsListButton = 2130903041;
 			
 			// aapt resource value: 0x7F030002
-			public const int googleLoginButton = 2130903042;
+			public const int getFirebaseActivitiesButton = 2130903042;
 			
 			// aapt resource value: 0x7F030003
-			public const int webview = 2130903043;
+			public const int googleLoginButton = 2130903043;
+			
+			// aapt resource value: 0x7F030004
+			public const int webview = 2130903044;
 			
 			static Id()
 			{
