@@ -34,11 +34,11 @@
 
     public partial class DocumentFields
     {
-        [JsonProperty("steps")]
-        public Steps Steps { get; set; }
+        [JsonProperty("tasks")]
+        public Tasks Tasks { get; set; }
     }
 
-    public partial class Steps
+    public partial class Tasks
     {
         [JsonProperty("arrayValue")]
         public ArrayValue ArrayValue { get; set; }

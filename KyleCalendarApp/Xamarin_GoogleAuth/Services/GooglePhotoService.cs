@@ -13,12 +13,12 @@ namespace Xamarin_GoogleAuth.Services
     public class GooglePhotoService
     {
 
-        public async Task<string> GetCalendars()
+        public async Task<string> GetPhotos()
         {
 
             //Make HTTP Request
             var request = new HttpRequestMessage();
-            request.RequestUri = new Uri("https://www.googleapis.com/calendar/v3/users/me/calendarList");
+            request.RequestUri = new Uri("https://photoslibrary.googleapis.com/v1/albums");
             request.Method = HttpMethod.Get;
 
             //Format Headers of Request with included Token
@@ -31,17 +31,20 @@ namespace Xamarin_GoogleAuth.Services
             var json = await content.ReadAsStringAsync();
 
             //Deserialize JSON Result
-            var result = JsonConvert.DeserializeObject<Methods.GetCalendarsMethod>(json);
+            var result = JsonConvert.DeserializeObject<Methods.GetPhotoAlbumMethod>(json);
 
             //Create itemList
             var itemList = new List<string>();
-
+            String storeAlbumUri = "";
+            String thumbNailAlbumUri = "";
             //Try to add "Summary" Items to list from JSON. If null, redirect to Login prompt.
             try
             {
-                foreach (var sum in result.Items)
+                foreach (var product in result.Albums)
                 {
-                    itemList.Add(sum.Summary);
+                    itemList.Add(product.ProductUrl.ToString());
+                    storeAlbumUri = product.ProductUrl.ToString();
+                    thumbNailAlbumUri = product.CoverPhotoBaseUrl.ToString();
                 }
             }
             catch (NullReferenceException e)
@@ -52,7 +55,7 @@ namespace Xamarin_GoogleAuth.Services
             //Compile these values in to a string list and return to be displayed
             string itemListString = String.Join(", ", itemList);
 
-            return itemListString;
+            return storeAlbumUri;
         }
     }
 }

@@ -1,44 +1,318 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+
+    <LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:orientation="vertical"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent">
-	<Button
-		android:id="@+id/googleLoginButton"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<ScrollView
 		android:layout_width="match_parent"
-		android:layout_height="53.0dp"
-		android:text="@string/googleLogin"
-		android:layout_marginRight="0.0dp"
-		android:layout_marginBottom="14.5dp"
-		android:layout_marginTop="0.0dp"
-		android:layout_marginLeft="0.0dp" />
-	<Button
-		android:id="@+id/getCalendarsButton"
-		android:layout_width="match_parent"
-		android:layout_height="53.7dp"
-		android:text="Available Calendars"
-		android:layout_marginBottom="0.0dp"
-		android:layout_marginTop="0.0dp"
-		android:layout_marginLeft="0.0dp"
-		android:layout_marginRight="0.0dp" />
-	<Button
-		android:id="@+id/getEventsListButton"
-		android:layout_width="match_parent"
-		android:layout_height="53.7dp"
-		android:text="List Events"
-		android:layout_marginBottom="0.0dp"
-		android:layout_marginTop="0.0dp"
-		android:layout_marginLeft="0.0dp"
-		android:layout_marginRight="0.0dp" />
-	<Button
-		android:id="@+id/getFirebaseActivitiesButton"
-		android:layout_width="match_parent"
-		android:layout_height="53.7dp"
-		android:text="List Activities (Firebase)"
-		android:layout_marginBottom="0.0dp"
-		android:layout_marginTop="0.0dp"
-		android:layout_marginLeft="0.0dp"
-		android:layout_marginRight="0.0dp" />
+		android:layout_height="wrap_content"
+		android:minWidth="25px"
+		android:minHeight="25px">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:focusableInTouchMode="true"
+			android:background = "@android:color/white">
+
+			<Button
+				android:id="@+id/googleLoginButton"
+				android:layout_width="match_parent"
+				android:layout_height="53.0dp"
+				android:text="@string/googleLogin"
+				android:layout_marginRight="0.0dp"
+				android:layout_marginBottom="0.0dp"
+				android:layout_marginTop="0.0dp"
+				android:layout_marginLeft="0.0dp" />
+
+			<Button
+				android:id="@+id/getEventsListButton"
+				android:layout_width="match_parent"
+				android:layout_height="53.7dp"
+				android:text="Refresh"
+				android:layout_marginBottom="0.0dp"
+				android:layout_marginTop="0.0dp"
+				android:layout_marginLeft="0.0dp"
+				android:layout_marginRight="0.0dp" />
+
+			<Button
+				android:id="@+id/getPhotosButton"
+				android:layout_width="match_parent"
+				android:layout_height="53.7dp"
+				android:text="Todays Photos"
+				android:layout_marginBottom="0.0dp"
+				android:layout_marginTop="0.0dp"
+				android:layout_marginLeft="0.0dp"
+				android:layout_marginRight="0.0dp" />
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="160dp"
+				android:background = "#DDE8FA"
+				android:layout_marginTop = "0dp"/>
+
+			<TextView
+				android:layout_width="150dp"
+				android:layout_height="40dp"
+				android:layout_marginTop = "-140dp"
+				android:layout_marginLeft = "130dp"
+				android:text = "Get Ready"
+				android:textColor = "@android:color/black"
+				android:textSize = "25dp"
+                />
+
+
+			<Button
+				android:id="@+id/Event1"
+				android:layout_width="80dp"
+				android:layout_height="80dp"
+				android:text=""
+				android:layout_marginBottom="0.0dp"
+				android:layout_marginTop="0.0dp"
+				android:layout_marginLeft="10.0dp"
+				android:layout_marginRight="0.0dp"
+				android:textSize="10dp"
+				style="?android:attr/borderlessButtonStyle"
+				android:textColor = "@android:color/black"
+				android:background = "#DDE8FA" />
+
+			<Button
+				android:id="@+id/Event4"
+				android:layout_width="80dp"
+				android:layout_height="80dp"
+				android:text=""
+				android:layout_marginBottom="0.0dp"
+				android:layout_marginTop="-80.0dp"
+				android:layout_marginLeft="280.0dp"
+				android:layout_marginRight="0.0dp"
+				android:textSize="10dp"
+				style="?android:attr/borderlessButtonStyle"
+				android:textColor = "@android:color/black"
+				android:background = "#DDE8FA" />
+
+			<Button
+				android:id="@+id/Event2"
+				android:layout_width="80dp"
+				android:layout_height="80dp"
+				android:text=""
+				android:layout_marginBottom="0.0dp"
+				android:layout_marginTop="-80.0dp"
+				android:layout_marginLeft="100.0dp"
+				android:layout_marginRight="0.0dp"
+				android:textSize="10dp"
+				style="?android:attr/borderlessButtonStyle"
+				android:textColor = "@android:color/black"
+				android:background = "#DDE8FA" />
+
+			<Button
+				android:id="@+id/Event3"
+				android:layout_width="80dp"
+				android:layout_height="80dp"
+				android:text=""
+				android:layout_marginBottom="0.0dp"
+				android:layout_marginTop="-80.0dp"
+				android:layout_marginLeft="190.0dp"
+				android:layout_marginRight="0.0dp"
+				android:textSize="10dp"
+				style="?android:attr/borderlessButtonStyle"
+				android:textColor = "@android:color/black"
+				android:background = "#DDE8FA" />
+
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:focusableInTouchMode="true"
+				android:background = "@android:color/white"
+				android:id="@+id/linearLayout1">
+
+
+				<TextView
+					android:layout_width="134.5dp"
+					android:layout_height="29.7dp"
+					android:layout_marginTop = "30dp"
+					android:layout_marginLeft = "120dp"
+					android:text="Todays Events"
+					android:textSize = "20dp"
+					android:textColor = "#B1ABD5"
+					android:textStyle="bold"
+					android:id="@+id/textView3" 
+                />
+
+
+				<EditText
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/date_EditText"
+					android:text="Click here to pick another day"
+					android:layout_marginBottom = "10dp"
+					android:textSize = "20dp"
+					android:textColor = "#737373"/>
+
+
+				<Button
+					android:id="@+id/TodoEvent1"
+					android:layout_width="170dp"
+					android:layout_height="60dp"
+					android:layout_marginBottom="0.0dp"
+					android:layout_marginTop="-10.0dp"
+					android:layout_marginLeft="10.0dp"
+					android:text="Please Choose             Your Day"
+					android:textSize = "13dp"
+					android:paddingBottom="0dp"
+					android:paddingLeft = "0dp"
+					android:textColor = "@android:color/black"
+					android:background = "#e6e6e6" />
+
+				<Button
+					android:id="@+id/TodoEvent2"
+					android:layout_width="170dp"
+					android:layout_height="60dp"
+					android:layout_marginBottom="0.0dp"
+					android:layout_marginTop="-60.0dp"
+					android:layout_marginLeft="210.0dp"
+					android:text="Please Choose             Your Day"
+					android:textSize = "13dp"
+					android:paddingBottom="0dp"
+					android:textColor = "@android:color/black"
+					android:background = "#e6e6e6" />
+
+				<Button
+					android:id="@+id/TimeEvent"
+					android:layout_width="350dp"
+					android:layout_height="118.9dp"
+					android:layout_marginBottom="0.0dp"
+					android:layout_marginTop="35.0dp"
+					android:layout_marginLeft="15.0dp"
+					android:text="Eat Breakfast"
+					android:textSize = "17dp"
+					android:paddingBottom="40dp"
+					android:textColor = "@android:color/black"
+					android:background = "#EBE8FA" />
+
+				<ImageView
+					android:layout_width="50dp"
+					android:layout_height="50dp"
+					android:src= "@drawable/forks"
+					android:layout_marginLeft = "165dp"
+					android:layout_marginTop = "-62dp"
+					android:translationZ = "5dp"
+					android:background="#EBE8FA"
+					android:id="@+id/imageView2" />
+
+
+				<TextView
+					android:layout_width="100dp"
+					android:layout_height="50dp"
+					android:layout_marginTop = "30dp"
+					android:layout_marginLeft = "170dp"
+					android:text="Goals"
+					android:textSize = "20dp"
+					android:textColor = "#1042A4"
+					android:textStyle="bold"
+					android:id="@+id/textView4" />
+
+				<ImageView
+					android:layout_width="150dp"
+					android:layout_height="100dp"
+					android:src= "@drawable/running"
+					android:layout_marginLeft = "30dp"
+					android:layout_marginTop = "0dp"
+					android:translationZ = "5dp"
+					android:id="@+id/imageView3" />
+
+				<ImageView
+					android:layout_width="150dp"
+					android:layout_height="100dp"
+					android:src= "@drawable/painting"
+					android:layout_marginLeft = "220dp"
+					android:layout_marginTop = "-100dp"
+					android:translationZ = "5dp"
+					android:id="@+id/imageView4" />
+
+				<TextView
+					android:layout_width="150dp"
+					android:layout_height="50dp"
+					android:layout_marginTop = "10dp"
+					android:layout_marginLeft = "40dp"
+					android:text="Go for a run"
+					android:textSize = "20dp"
+					android:textColor = "#1042A4"
+					android:id="@+id/textView5" />
+
+				<TextView
+					android:layout_width="150dp"
+					android:layout_height="50dp"
+					android:layout_marginTop = "-40dp"
+					android:layout_marginLeft = "220dp"
+					android:text="Paint"
+					android:textSize = "20dp"
+					android:textColor = "#1042A4"
+					android:id="@+id/textView6" />
+
+				<TextView
+					android:layout_width="150dp"
+					android:layout_height="50dp"
+					android:layout_marginTop = "20dp"
+					android:layout_marginLeft = "20dp"
+					android:text="Read a Book"
+					android:textSize = "20dp"
+					android:textColor = "#1042A4"
+					android:textStyle="bold"
+					android:id="@+id/textView7" />
+
+				<ImageView
+					android:layout_width="120dp"
+					android:layout_height="80dp"
+					android:src= "@drawable/readBook"
+					android:layout_marginLeft = "220dp"
+					android:layout_marginTop = "-80dp"
+					android:translationZ = "5dp"
+					android:id="@+id/imageView5" />
+
+				<TextView
+					android:layout_width="150dp"
+					android:layout_height="50dp"
+					android:layout_marginTop = "50dp"
+					android:layout_marginLeft = "20dp"
+					android:text="Work Out"
+					android:textSize = "20dp"
+					android:textColor = "#1042A4"
+					android:textStyle="bold"
+					android:id="@+id/textView8" />
+
+				<ImageView
+					android:layout_width="120dp"
+					android:layout_height="80dp"
+					android:src= "@drawable/workOut"
+					android:layout_marginLeft = "220dp"
+					android:layout_marginTop = "-100dp"
+					android:translationZ = "5dp"
+					android:id="@+id/imageView6" />
+
+
+				<Button
+					android:id="@+id/getCalendarsButton"
+					android:layout_width="match_parent"
+					android:layout_height="53.7dp"
+					android:text="Available Calendars"
+					android:layout_marginBottom="0.0dp"
+					android:layout_marginTop="0.0dp"
+					android:layout_marginLeft="0.0dp"
+					android:layout_marginRight="0.0dp" />
+
+
+			</LinearLayout>
+
+
+		</LinearLayout>
+
+	</ScrollView>
+
 </LinearLayout>
 
