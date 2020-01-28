@@ -31,8 +31,21 @@
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>CFBundleName</key>
-	<string>ProjectCaitlin</string>
+	<string>Project Caitlin</string>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.1009120542229-m56ni4pvg8pj4tffuc2i6pthevrken6m</string>
+			</array>
+			<key>CFBundleURLName</key>
+			<string>Google.OAuth</string>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+		</dict>
+	</array>
 </dict>
 </plist>
