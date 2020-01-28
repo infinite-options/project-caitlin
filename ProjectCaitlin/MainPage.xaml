@@ -5,27 +5,15 @@
         Margin="20">
         
         <Label
-            Text="FireAuth"
+            Text="Project Caitlin"
             HorizontalOptions="Center"
             TextColor="#4682B4"
             FontSize="35"
             Margin="0, 20"
             />
         
-        <Entry
-            Placeholder="E-mail"
-            Keyboard="Email"
-            x:Name="EmailInput"
-            />
-        
-        <Entry
-            Placeholder="Password"
-            IsPassword="true"
-            x:Name="PasswordInput"
-            />
-        
         <Button
-            Text="Enter"
+            Text="Login"
             Clicked="LoginClicked"
             Margin="60, 40"
             BackgroundColor="#4682B4"

@@ -37,7 +37,7 @@ namespace ProjectCaitlin.iOS
 
 
             // Load redirectUrl page
-             //AuthenticationState.Authenticator.OnPageLoading(uri);
+            AuthenticationState.Authenticator.OnPageLoading(uri);
 
             return true;
         }
