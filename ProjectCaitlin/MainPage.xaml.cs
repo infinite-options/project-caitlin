@@ -17,15 +17,18 @@ namespace ProjectCaitlin
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+        Xamarin.Auth.Presenters.OAuthLoginPresenter presenter = new Xamarin.Auth.Presenters.OAuthLoginPresenter();
+        OAuth2Authenticator authenticator;
+
         public MainPage()
         {
             InitializeComponent();
 
             credentials creds = new credentials();
             Console.WriteLine(creds.client_id);
-            var authenticator = new OAuth2Authenticator(
+            authenticator = new OAuth2Authenticator(
                 creds.client_id,
-                "XfOfK0H_JbStjfE760jLbV2F",
+                null,
                 "https://www.googleapis.com/auth/calendar",
                 new Uri(creds.auth_uri),
                 new Uri(creds.redirect_uri),
@@ -35,9 +38,7 @@ namespace ProjectCaitlin
 
             authenticator.Completed += OnAuthCompleted;
 
-            var presenter = new Xamarin.Auth.Presenters.OAuthLoginPresenter();
             Console.WriteLine("authenticator: " + authenticator);
-            //presenter.Login(authenticator);
             LoadFirestore();
         }
 
@@ -63,6 +64,11 @@ namespace ProjectCaitlin
 
                 Console.WriteLine("Firebase:" + meals["fields"]["last_name"]["stringValue"].ToString());
             }
+        }
+
+        async void LoginClicked(object sender, EventArgs e)
+        {
+            presenter.Login(authenticator);
         }
     }
 }
