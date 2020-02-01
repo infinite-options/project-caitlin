@@ -1,0 +1,13 @@
+C:\Users\Sruthi Jaganathan\source\repos\CreateTable\CreateTable\bin\Debug\netstandard2.0\CreateTable.deps.json
+C:\Users\Sruthi Jaganathan\source\repos\CreateTable\CreateTable\bin\Debug\netstandard2.0\CreateTable.dll
+C:\Users\Sruthi Jaganathan\source\repos\CreateTable\CreateTable\bin\Debug\netstandard2.0\ref\CreateTable.dll
+C:\Users\Sruthi Jaganathan\source\repos\CreateTable\CreateTable\bin\Debug\netstandard2.0\CreateTable.pdb
+C:\Users\Sruthi Jaganathan\source\repos\CreateTable\CreateTable\obj\Debug\netstandard2.0\CreateTable.csprojAssemblyReference.cache
+C:\Users\Sruthi Jaganathan\source\repos\CreateTable\CreateTable\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Sruthi Jaganathan\source\repos\CreateTable\CreateTable\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Sruthi Jaganathan\source\repos\CreateTable\CreateTable\obj\Debug\netstandard2.0\CreateTable.AssemblyInfoInputs.cache
+C:\Users\Sruthi Jaganathan\source\repos\CreateTable\CreateTable\obj\Debug\netstandard2.0\CreateTable.AssemblyInfo.cs
+C:\Users\Sruthi Jaganathan\source\repos\CreateTable\CreateTable\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Sruthi Jaganathan\source\repos\CreateTable\CreateTable\obj\Debug\netstandard2.0\CreateTable.dll
+C:\Users\Sruthi Jaganathan\source\repos\CreateTable\CreateTable\obj\Debug\netstandard2.0\ref\CreateTable.dll
+C:\Users\Sruthi Jaganathan\source\repos\CreateTable\CreateTable\obj\Debug\netstandard2.0\CreateTable.pdb
